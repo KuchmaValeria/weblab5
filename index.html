@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Задание 5 — Калькулятор стоимости заказа</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calc.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>Калькулятор стоимости заказа</h1>
+    </header>
+
+    <main class="container">
+        <form id="calc-form" class="block" action="#" method="post">
+            <div class="field">
+                <label for="product">Товар:</label>
+                <select id="product" name="product">
+                    <option value="30">Ручка — 30 руб.</option>
+                    <option value="85">Тетрадь — 85 руб.</option>
+                    <option value="450">Блокнот в кожаной обложке — 450 руб.</option>
+                    <option value="1500">Рюкзак — 1500 руб.</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="quantity">Количество:</label>
+                <input type="text" id="quantity" name="quantity" value="1" autocomplete="off">
+            </div>
+
+            <button type="button" id="calc-button">Рассчитать стоимость</button>
+
+            <p id="result" class="result" role="status"></p>
+        </form>
+    </main>
+
+    <footer class="site-footer">
+        <p>(c) Кучма Валерия</p>
+    </footer>
+
+</body>
+</html>
